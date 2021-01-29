@@ -13,6 +13,7 @@ export class Popup {
     }
 
     close() {
+        event.preventDefault();
         if(this.modal.classList.contains('modal_opened')) {
             this.modal.classList.remove('modal_opened')
             }
