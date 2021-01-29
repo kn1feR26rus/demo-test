@@ -1,0 +1,14 @@
+.task__delete {
+    margin: auto;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    width: 17px;
+    height: 17px;
+    background: url(../../../images/krestik.jpg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: 0;
+
+}

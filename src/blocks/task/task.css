@@ -1,0 +1,14 @@
+@import url(./__check/task__check.css);
+@import url(./__correct/task__correct.css);
+@import url(./__delete/task__delete.css);
+@import url(./__element/task__element.css);
+@import url(./__text/task__text.css);
+@import url(./__textarea/task__textarea.css);
+@import url(./__ok/task__ok.css);
+
+.task {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+}

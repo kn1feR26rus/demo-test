@@ -1,0 +1,7 @@
+.modal_opened {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 111;
+}

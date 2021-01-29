@@ -1,0 +1,8 @@
+@import url(./_active/task__text_active.css);
+
+.task__text {
+    width: 80%;
+    margin: 0;
+    margin-right: 20px;
+    word-wrap: break-word;
+}

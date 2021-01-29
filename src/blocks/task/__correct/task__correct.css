@@ -1,0 +1,12 @@
+.task__correct {
+    margin: auto;
+    margin-right: 0;
+    margin-left: 0;
+    width: 15px;
+    height: 15px;
+    background: url(../../../images/write_icon.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: 0;
+}

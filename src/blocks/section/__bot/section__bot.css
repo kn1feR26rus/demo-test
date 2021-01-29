@@ -1,0 +1,18 @@
+@import url(./_progress/section__bot_progress.css);
+@import url(./_remover/section__bot_remover.css);
+@import url(./_progress/section__bot_progress.css);
+@import url(./_progressBar/section__bot_progressBar.css);
+@import url(./_progressBar-text/section__bot_progressBar-text.css);
+
+
+
+.section__bot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 450px;
+    height: 30px;
+}

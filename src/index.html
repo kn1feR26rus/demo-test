@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="demo-test">
+    <meta name="keywords" content="demo, test">
+    <meta name="author" content="Олег Коваленко">
+    <link rel="stylesheet" href="./pages/index.css" type="text/css">
+    <title>ToDoListApp</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+        </header>
+        <main class="main">
+          <section class="section">
+              <h1 class="section__title">TODOLIST</h1>
+              <div class="section__top">
+                  <input class="section__top_input" id="inputText">
+                  <button class="section__top_add" type="submit">+</button>
+              </div>
+              <ul class="task" id="task"></ul>
+              <div class="section__bot">
+                <div class="section__bot_progress">
+                  <div class="section__bot_progressBar">
+                    <p class="section__bot_progressBar-text"></p>
+                  </div>
+                </div>
+                <button class="section__bot_remover">Remove checked &times;</button>
+              </div>
+          </section>
+        </main>
+        <footer>
+          <p>	&copy; Oleg Kovalenko</p>
+        </footer>
+        <div class="modal" id="deletemodal">
+          <form action="#" class="deleteform" name="deleteform">
+              <button class="deleteform__close-button form__close-button" type="button"></button>
+              <h2 class="deleteform__title">Вы уверены?</h2>
+              <div class="deleteform__buttons">
+                <button class="deleteform__submit form__submit-button" type="submit">Да</button>
+                <button class="deleteform__cancel form__cancel-button" type="submit">Нет</button>
+              </div>
+          </form>
+      </div>
+    </div>
+    <script type="module" src="./pages/index.js"></script>
+</body>

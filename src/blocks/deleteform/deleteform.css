@@ -1,0 +1,15 @@
+@import url(./__title/deleteform__title.css);
+@import url(./__close-button/deleteform__close-button.css);
+@import url(./__submit/deleteform__submit.css);
+@import url(./__cancel/deleteform__cancel.css);
+@import url(./__buttons/deleteform__buttons.css);
+
+.deleteform {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    color: #6495ED;
+    border-radius: 5px;
+}

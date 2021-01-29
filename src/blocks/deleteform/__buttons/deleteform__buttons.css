@@ -1,0 +1,6 @@
+.deleteform__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 70px 50px 10px;
+}

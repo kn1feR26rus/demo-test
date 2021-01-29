@@ -1,0 +1,12 @@
+@import url(./_input/section__top_input.css);
+@import url(./_add/section__top_add.css);
+
+.section__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 450px;
+}

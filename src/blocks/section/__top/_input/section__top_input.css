@@ -1,0 +1,8 @@
+.section__top_input {
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: chocolate;
+    color: #6495ED;
+}

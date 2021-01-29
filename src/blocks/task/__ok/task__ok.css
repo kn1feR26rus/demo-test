@@ -1,0 +1,12 @@
+.task__ok {
+    margin: auto;
+    margin-right: 0;
+    margin-left: 0;
+    width: 15px;
+    height: 15px;
+    background: url(../../../images/ok_icon.jpg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: 0;
+}
