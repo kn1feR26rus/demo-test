@@ -22,9 +22,12 @@ export class Popup {
     setEventListeners() {
         this.closeButton.addEventListener('click', () => {
             this.close()
-            });
+        })
+
         this.cancelButton.addEventListener('click', () => {
-            this.close()})
+            this.close()
+        })
+
         this.confirmeButton.addEventListener('click', () => {
             this.close()    
         })

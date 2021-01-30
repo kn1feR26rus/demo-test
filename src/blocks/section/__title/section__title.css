@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+
 .section__title {
+    font-family: 'Londrina Solid', cursive;
     margin: 0 auto;
     margin-top: 10px;
     color: gray;

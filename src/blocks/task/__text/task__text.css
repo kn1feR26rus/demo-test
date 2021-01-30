@@ -1,8 +1,11 @@
 @import url(./_active/task__text_active.css);
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Play&display=swap');
 
 .task__text {
     width: 80%;
     margin: 0;
     margin-right: 20px;
     word-wrap: break-word;
+    font-family: 'Londrina Solid', cursive;
+    font-family: 'Play', sans-serif;
 }

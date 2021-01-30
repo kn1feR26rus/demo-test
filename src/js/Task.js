@@ -97,6 +97,5 @@ export class Task {
             this.createElem();
             document.getElementById("inputText").value = "";;
             });
-        
     }       
 }
