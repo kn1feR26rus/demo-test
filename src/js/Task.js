@@ -22,7 +22,6 @@ export class Task {
         const textarea = document.createElement('textarea');
         const corrBtn = document.createElement('button');
         
-
         //Give classes
         elem.className = 'task__element';
         check.className = 'task__check';
@@ -40,7 +39,6 @@ export class Task {
 
         text.textContent = inputTask.value;
         
-
         const letProgress = () => {
             const allCheckBox = document.querySelectorAll('.task__check')
             let arrCheckBox = Array.prototype.slice.call(allCheckBox)
@@ -48,12 +46,9 @@ export class Task {
             const arrFilter = arrCheckBox.filter(i => i.checked).length 
             progressBar.style.width = arrFilter / arrLength * 100 + '%';
             progressText.innerHTML =  arrFilter  + ' ' + "of" + ' ' + arrLength + ' ' + "tasks done"
-            console.log(arrLength);
-            console.log(arrFilter);
         }
-        
-        letProgress();
-        
+
+        letProgress()
 
         //Click check
         check.addEventListener('click', () => {
@@ -96,12 +91,12 @@ export class Task {
          })          
     }
 
+
     setEventListeners() {
         this.addBtn.addEventListener('click', () => {
             this.createElem();
-            document.getElementById("inputText").value = "";
-            
+            document.getElementById("inputText").value = "";;
             });
         
-    }    
+    }       
 }
