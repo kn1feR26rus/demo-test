@@ -10,3 +10,11 @@
     font-family: 'Londrina Solid', cursive;
     font-family: 'Play', sans-serif;
 }
+
+@media all and (max-width: 800px) {
+    .section__top_input {
+       width: 89%;
+       margin-right: 3%;
+    }
+}
+

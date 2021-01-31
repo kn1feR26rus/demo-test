@@ -16,3 +16,10 @@
     width: 450px;
     height: 30px;
 }
+
+
+@media all and (max-width: 800px) {
+    .section__bot {
+       width: 80%;
+    }
+}

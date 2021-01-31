@@ -9,3 +9,10 @@
     font-family: 'Londrina Solid', cursive;
     font-family: 'Play', sans-serif;
 }
+
+@media all and (max-width: 800px) {
+    .section__bot_remover {
+       width: 41%;
+       height: 100%;
+    }
+  }

@@ -1,6 +1,5 @@
 .section__bot_progressBar {
     background-color: yellow;
     height: 30px;
-    width: 0;
-    text-align: center;
+    width: 0%;
 }
