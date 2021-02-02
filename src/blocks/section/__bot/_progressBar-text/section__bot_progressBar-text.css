@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Play&display=swap');
 
 .section__bot_progressBar-text {
+    position: relative;
+    bottom: 29px;
     margin: 0;
     padding-top: 5px;
     width: 100%;  
