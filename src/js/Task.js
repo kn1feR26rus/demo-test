@@ -67,6 +67,7 @@ export class Task {
             if(check.checked) {
                 elem.remove();
                 letProgress();
+                progressBar.style.width = 0;
             }
          })
 
