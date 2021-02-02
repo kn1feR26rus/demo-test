@@ -24,3 +24,9 @@
        padding-top: 10px;
     }
   }
+
+  @media all and (max-width: 293px) {
+   .section__bot_progressBar-text{
+      padding-top: 4px;
+   }
+ }
