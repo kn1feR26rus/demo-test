@@ -3,3 +3,16 @@
     margin-right: 12px;
     width: 80%;
 }
+
+@media all and (max-width: 550px) {
+    .task__textarea {
+        width: 70%;
+        margin-right: 3%;
+    }
+  }
+
+  @media all and (max-width: 320px) {
+    .task__textarea {
+       width: 55%;
+    }
+  }

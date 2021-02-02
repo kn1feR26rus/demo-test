@@ -9,3 +9,16 @@
     font-family: 'Londrina Solid', cursive;
     font-family: 'Play', sans-serif;
 }
+
+@media all and (max-width: 550px) {
+    .task__text {
+        width: 70%;
+        margin-right: 3%;
+    }
+  }
+
+  @media all and (max-width: 320px) {
+    .task__text {
+       width: 55%;
+    }
+  }
