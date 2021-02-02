@@ -11,3 +11,9 @@
     justify-content: center;
     border-radius: 10px;
 }
+
+@media all and (max-width: 800px) {
+    .section {
+       width: 80%;
+    }
+}

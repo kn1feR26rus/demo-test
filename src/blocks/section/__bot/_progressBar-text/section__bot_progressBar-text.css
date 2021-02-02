@@ -3,10 +3,22 @@
 .section__bot_progressBar-text {
     margin: 0;
     padding-top: 5px;
-    width: 200px;
-    height: 20px;
-    align-items: center;
-    justify-content: center;
+    width: 100%;  
     font-family: 'Londrina Solid', cursive;
     font-family: 'Play', sans-serif;
+    text-align: center;
+    
 }
+
+@media all and (max-width: 800px) {
+    .section__bot_progressBar-text{
+       font-size: 15px;
+    }
+  }
+
+  @media all and (max-width: 550px) {
+    .section__bot_progressBar-text{
+       font-size: 10px;
+       padding-top: 10px;
+    }
+  }
