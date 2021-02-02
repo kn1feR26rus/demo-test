@@ -74,6 +74,7 @@ export class Task {
          //Delete checked string
          deleteBtn.addEventListener('click', () => {
              task.removeChild(elem);
+             letProgress();
          })
 
          //Edit string
