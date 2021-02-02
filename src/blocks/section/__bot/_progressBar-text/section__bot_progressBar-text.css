@@ -12,8 +12,12 @@
 
 @media all and (max-width: 800px) {
     .section__bot_progressBar-text{
-       font-size: 10px;
-       text-align: center;
+       font-size: 15px;
     }
   }
 
+  @media all and (max-width: 550px) {
+    .section__bot_progressBar-text{
+       font-size: 1px;
+    }
+  }

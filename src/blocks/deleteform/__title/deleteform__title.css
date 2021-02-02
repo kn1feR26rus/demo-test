@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Play&display=swap');
+
 .deleteform__title {
     margin: 0 auto;
     margin-top: 30px;
+    font-family: 'Londrina Solid', cursive;
+    font-family: 'Play', sans-serif;
 }
