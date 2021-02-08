@@ -10,6 +10,12 @@
     font-family: 'Play', sans-serif;
     cursor: pointer;
 }
+.section__bot_remover:disabled,
+.section__bot_remover[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
 
 @media all and (max-width: 800px) {
     .section__bot_remover {

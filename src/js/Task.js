@@ -12,6 +12,7 @@ export class Task {
         const inputTask = document.querySelector('.section__top_input');
         const submitBtn = document.querySelector('.deleteform__submit');
         
+
         //Create elems
         const elem = document.createElement('li');
         const check = document.createElement('input');
@@ -38,7 +39,7 @@ export class Task {
         elem.appendChild(deleteBtn);
 
         text.textContent = inputTask.value;
-        
+
         const letProgress = () => {
             const allCheckBox = document.querySelectorAll('.task__check')
             let arrCheckBox = Array.prototype.slice.call(allCheckBox)
@@ -48,17 +49,19 @@ export class Task {
             progressText.innerHTML =  arrFilter  + ' ' + "of" + ' ' + arrLength + ' ' + "tasks done"
         }
 
-        letProgress()
+        letProgress() 
 
         //Click check
         check.addEventListener('click', () => {
             if(check.checked) {
                 text.classList.add('task__text_active');
                 letProgress();
+                enableRemover()
             }   
             else { 
                 text.classList.remove('task__text_active');
                 letProgress();
+                enableRemover()
             }
         })   
 
@@ -67,6 +70,7 @@ export class Task {
             if(check.checked) {
                 elem.remove();
                 letProgress();
+                enableRemover()
                 progressBar.style.width = 0;
             }
          })
@@ -75,6 +79,7 @@ export class Task {
          deleteBtn.addEventListener('click', () => {
              task.removeChild(elem);
              letProgress();
+             enableRemover()
          })
 
          //Edit string
@@ -91,10 +96,26 @@ export class Task {
             text.innerText = textarea.value;
             corrBtn.replaceWith(correctBtn);
          })            
+
+         const removik = document.querySelector('#removik');
+         
+        
+         const enableRemover = () => {
+            const allCheckBox = document.querySelectorAll('.task__check')
+            let arrCheckBox = Array.prototype.slice.call(allCheckBox)
+            const arrFilter = arrCheckBox.filter(i => i.checked).length 
+             if(arrFilter === 0) {
+                removik.setAttribute('disabled', 'disabled');
+             } else {
+                removik.removeAttribute('disabled', 'disabled');
+             }
+         }
+         enableRemover()
     }
 
-
+    
     setEventListeners() {
+        removik.setAttribute('disabled', 'disabled');
         this.addBtn.addEventListener('click', () => {
             this.createElem();
             document.getElementById("inputText").value = "";
