@@ -15,6 +15,7 @@
   border: 1px solid #999999;
   background-color: #cccccc;
   color: #666666;
+  cursor:no-drop;
 }
 
 @media all and (max-width: 800px) {

@@ -11,8 +11,8 @@ export class Task {
         const progressText = document.querySelector('.section__bot_progressBar-text')
         const inputTask = document.querySelector('.section__top_input');
         const submitBtn = document.querySelector('.deleteform__submit');
+        const removik = document.querySelector('#removik');
         
-
         //Create elems
         const elem = document.createElement('li');
         const check = document.createElement('input');
@@ -97,9 +97,6 @@ export class Task {
             corrBtn.replaceWith(correctBtn);
          })            
 
-         const removik = document.querySelector('#removik');
-         
-        
          const enableRemover = () => {
             const allCheckBox = document.querySelectorAll('.task__check')
             let arrCheckBox = Array.prototype.slice.call(allCheckBox)
