@@ -109,7 +109,6 @@ export class Task {
          }
          enableRemover()
     }
-
     
     setEventListeners() {
         removik.setAttribute('disabled', 'disabled');
