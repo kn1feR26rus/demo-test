@@ -1,7 +1,6 @@
 import { Popup } from '../js/Popup.js';
 import { Task } from '../js/Task.js';
 
-
 const modal = document.querySelector('.modal');
 const task = document.getElementById('#task');
 

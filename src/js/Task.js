@@ -90,15 +90,14 @@ export class Task {
             textarea.replaceWith(text);
             text.innerText = textarea.value;
             corrBtn.replaceWith(correctBtn);
-         })          
-
+         })            
     }
 
 
     setEventListeners() {
         this.addBtn.addEventListener('click', () => {
             this.createElem();
-            document.getElementById("inputText").value = "";;
+            document.getElementById("inputText").value = "";
             });
     }       
 }

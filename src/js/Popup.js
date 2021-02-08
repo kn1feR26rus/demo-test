@@ -18,6 +18,7 @@ export class Popup {
             this.modal.classList.remove('modal_opened')
             }
     }
+    
 
     setEventListeners() {
         this.closeButton.addEventListener('click', () => {
