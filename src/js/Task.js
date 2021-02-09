@@ -1,6 +1,5 @@
 export class Task {
-    constructor(addBtn) {
-        this.addBtn = addBtn;
+    constructor() {
     }
 
     createElem() {
@@ -12,6 +11,7 @@ export class Task {
         const inputTask = document.querySelector('.section__top_input');
         const submitBtn = document.querySelector('.deleteform__submit');
         const removik = document.querySelector('#removik');
+        
         
         //Create elems
         const elem = document.createElement('li');
@@ -107,14 +107,22 @@ export class Task {
                 removik.removeAttribute('disabled', 'disabled');
              }
          }
-         enableRemover()
+         enableRemover(); 
     }
     
     setEventListeners() {
+        const addElem = document.querySelector('.section__top_add');
+        const inputTask = document.querySelector('.section__top_input');
         removik.setAttribute('disabled', 'disabled');
-        this.addBtn.addEventListener('click', () => {
+        addElem.addEventListener('click', () => {
             this.createElem();
             document.getElementById("inputText").value = "";
             });
+        inputTask.addEventListener('keydown', (e) => {
+            if (e.keyCode === 13 ) {
+                this.createElem();
+                document.getElementById("inputText").value = "";
+            }
+        })
     }       
 }

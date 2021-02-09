@@ -5,7 +5,7 @@ const modal = document.querySelector('.modal');
 const task = document.getElementById('#task');
 
 //const buttons
-const addElem = document.querySelector('.section__top_add');
+
 const closeBtn = document.querySelector('.deleteform__close-button');
 const cancelBtn = document.querySelector('.deleteform__cancel');
 const submitBtn = document.querySelector('.deleteform__submit');
@@ -16,7 +16,7 @@ deleteBtn.addEventListener('click', () => {
     newModal.open();
 });
 
-const newTask = new Task(addElem);
+const newTask = new Task();
 newTask.setEventListeners();
 
 const newModal = new Popup(modal, closeBtn, cancelBtn, submitBtn);
