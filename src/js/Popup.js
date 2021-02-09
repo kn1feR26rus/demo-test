@@ -7,14 +7,14 @@ export class Popup {
     }
 
     open() {
-        if(!this.modal.classList.contains('modal_opened')) {
+        if (!this.modal.classList.contains('modal_opened')) {
             this.modal.classList.add('modal_opened')
             }
     }
 
     close() {
         event.preventDefault();
-        if(this.modal.classList.contains('modal_opened')) {
+        if (this.modal.classList.contains('modal_opened')) {
             this.modal.classList.remove('modal_opened')
             }
     }

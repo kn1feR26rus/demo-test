@@ -12,7 +12,6 @@ export class Task {
         const submitBtn = document.querySelector('.deleteform__submit');
         const removik = document.querySelector('#removik');
         
-        
         //Create elems
         const elem = document.createElement('li');
         const check = document.createElement('input');
@@ -53,7 +52,7 @@ export class Task {
 
         //Click check
         check.addEventListener('click', () => {
-            if(check.checked) {
+            if (check.checked) {
                 text.classList.add('task__text_active');
                 letProgress();
                 enableRemover()
@@ -73,41 +72,41 @@ export class Task {
                 enableRemover()
                 progressBar.style.width = 0;
             }
-         })
+        })
 
          //Delete checked string
-         deleteBtn.addEventListener('click', () => {
-             task.removeChild(elem);
-             letProgress();
-             enableRemover()
-         })
+        deleteBtn.addEventListener('click', () => {
+            task.removeChild(elem);
+            letProgress();
+            enableRemover()
+        })
 
          //Edit string
-         correctBtn.addEventListener('click', () => {
+        correctBtn.addEventListener('click', () => {
             elem.appendChild(textarea);
             correctBtn.replaceWith(corrBtn);
             textarea.value = text.innerText;
             text.replaceWith(textarea);
-         })
+        })
 
          //Подтверждение редактирования
-         corrBtn.addEventListener('click', () => {
+        corrBtn.addEventListener('click', () => {
             textarea.replaceWith(text);
             text.innerText = textarea.value;
             corrBtn.replaceWith(correctBtn);
-         })            
+        })            
 
-         const enableRemover = () => {
+        const enableRemover = () => {
             const allCheckBox = document.querySelectorAll('.task__check')
             let arrCheckBox = Array.prototype.slice.call(allCheckBox)
             const arrFilter = arrCheckBox.filter(i => i.checked).length 
-             if(arrFilter === 0) {
+            if (arrFilter === 0) {
                 removik.setAttribute('disabled', 'disabled');
-             } else {
+            } else {
                 removik.removeAttribute('disabled', 'disabled');
-             }
-         }
-         enableRemover(); 
+            }
+        }
+        enableRemover(); 
     }
     
     setEventListeners() {
